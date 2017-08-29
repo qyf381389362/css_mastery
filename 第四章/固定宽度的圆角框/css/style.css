@@ -1,0 +1,168 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+/* 单色无边框固定宽度的圆角框 */
+.box1{
+    width: 418px;
+    background: #effce7 url(../img/bottom.gif) no-repeat left bottom;
+    padding-bottom: 1px;
+}
+.box1 h2{
+    background: url(../img/top.gif) no-repeat left top;
+    margin-top: 0;
+    padding: 20px 20px 0 20px;
+    color: #94b767;
+}
+.box1 p {
+	padding: 0 20px;
+}
+
+/* 非单色有边框固定宽度的圆角框 */
+.box2{
+    width: 424px;
+    background:url(../img/tile2.gif) repeat-y;
+}
+.box2 h2{
+    background: url(../img/top2.gif) no-repeat left top;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    color: #94b767;
+}
+.box2 h2, .box2 p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.box2 .last{
+    background: url(../img/bottom2.gif) no-repeat left bottom;
+    padding-bottom: 20px;
+}
+
+/* 水平扩展的圆角框 */
+.box3{
+    width: 30em;
+    background: url(../img/bottom-left.gif) no-repeat left bottom;
+}
+.box-outer{
+    background: url(../img/bottom-right.gif) no-repeat right bottom;
+    padding-bottom: 1em;
+}
+.box-inner{
+    background: url(../img/top-left.gif) no-repeat left top;
+}
+.box3 h2{
+    background: url(../img/top-right.gif) no-repeat right top;
+    padding-top: 1em;
+}
+.box3 h2, .box3 p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* 山顶角 */
+.box4{
+    width: 20em;
+    background: #effce7 url(../img/bottom-left.gif) no-repeat left bottom;
+}
+.box4 .box-outer{
+    background: url(../img/bottom-right.gif) no-repeat right bottom;
+    padding-bottom: 5%;
+}
+.box4 .box-inner{
+    background: url(../img/top-left.gif) no-repeat left top;
+}
+.box4 h2{
+    background: url(../img/top-right.gif) no-repeat right top;
+    padding-top: 5%;
+}
+.box4 h2, .box4 p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* CSS3多背景特性实现圆角框 */
+.box5{
+    background-image: url(../img/mtop-left.gif),url(../img/mtop-right.gif),url(../img/mbottom-left.gif),url(../img/mbottom-right.gif);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    width: 30em;
+	background-color: #89ac11;
+	color: #fff;
+	padding: 2em 2em 1em 2em;
+	margin-top: 2em;
+}
+.box5 h2 {
+	margin-top: 0;
+	font-size: 1.6em;
+}
+
+/* 使用CSS3 border-radius 实现的圆角框 */
+.box6{
+    border-radius: 1em;
+    width: 30em;
+	background-color: #89ac11;
+	color: #fff;
+	padding: 2em 2em 1em 2em;
+	margin-top: 2em;
+}
+.box6 h2 {
+	margin-top: 0;
+	font-size: 1.6em;
+}
+
+/* 使用CSS3 border-image 实现的圆角框 */
+.box7{
+    -webkit-border-image: url(../img/corners.gif) 25% 25% 25% 25% / 25px round round;
+    width: 30em;
+	background-color: #89ac11;
+	color: #fff;
+	padding: 2em 2em 1em 2em;
+	margin-top: 2em;
+}
+.box7 h2 {
+	margin-top: 0;
+	font-size: 1.6em;
+}
+
+/* 应用投影的图像 */
+.img-wrapper{
+    background: url(../img/shadow.gif) no-repeat bottom right;
+    clear:right;
+    float: left;
+    position: relative;
+}
+.img-wrapper img{
+    margin: -5px 5px 5px -5px;
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    padding: 4px;
+    display: block;
+    position: relative;
+}
+
+/* 应用box-shadow投影的图像 */
+.img-wrapper2{
+    clear:left;
+}
+.img-wrapper2 img{
+    box-shadow: 3px 3px 6px #666;
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    padding: 4px;
+    margin: -5px 5px 5px -5px;
+}
+
+/* 使用CSS3 border-radius+border-shadow 实现的圆角框 */
+.box8{
+    border-radius: 1em;
+    width: 30em;
+	background-color: #89ac11;
+	color: #fff;
+	padding: 2em 2em 1em 2em;
+    margin-top: 2em;
+    box-shadow: 3px 3px 6px #666;
+}
+.box8 h2 {
+	margin-top: 0;
+	font-size: 1.6em;
+}
